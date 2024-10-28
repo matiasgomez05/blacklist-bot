@@ -1,0 +1,17 @@
+{
+  "name": "blacklistbot",
+  "version": "0.0.1",
+  "description": "Bot de discord",
+  "main": "index.js",
+  "scripts": {
+    "game": "index.js"
+  },
+  "author": "Misame",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^16.4.1",
+    "sequelize": "^6.23.1",
+    "sqlite3": "^5.1.1"
+  }
+}
