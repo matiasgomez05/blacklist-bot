@@ -35,7 +35,7 @@ cliente.once('ready', () => {
         },
         status: "online"
      });
-    console.log('BlackList Bot conectado satisfactoriamente');
+    console.log(`BlackList Bot conectado satisfactoriamente! ${cliente.user.tag}`);
 });
 
 //Respuestas del bot ante un mensaje 
