@@ -1,7 +1,6 @@
 //Configuracion principal:
 //Biblioteca dotenv y variables de entorno
 require('dotenv').config();
-const token = process.env.DISCORD_TOKEN; 
 const prefix = process.env.PREFIX;
 
 //Api fs para lectura de archivos
@@ -24,7 +23,7 @@ for (const archivo of archivoComandos) {
 }
 
 //Conexion del bot (Se inicializa desde terminal, con "node index.js")
-cliente.login(token);
+cliente.login(process.env.DISCORD_TOKEN);
 
 //Si se conecta correctamente, muestra el mensaje y establece actividad
 cliente.once('ready', () => {
